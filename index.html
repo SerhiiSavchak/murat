@@ -24,36 +24,54 @@
 
     <!-- Main styles -->
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Webstudio</title>
+
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Galaxy Fest</title>
   </head>
 
   <body>
     <!--Header-->
     <header class="page-header">
-      <h1 class="header-title">Galaxy Fest</h1>
-      <ul class="header-list list">
-        <li class="header-item"><p class="header-text">Найкращий вибір</p></li>
+      <div class="container">
+        <h1 class="header-title animate__animated animate__fadeInLeft">
+          Galaxy Fest
+        </h1>
+        <ul class="header-list list">
+          <li class="header-item">
+            <p class="header-text">Найкращий вибір</p>
+          </li>
 
-        <li class="header-item">
-          <p class="header-text">Сучасні технології</p>
-        </li>
-        <li class="header-item">
-          <p class="header-text">Обмежена пропозиція</p>
-        </li>
-      </ul>
+          <li class="header-item">
+            <p class="header-text">Сучасні технології</p>
+          </li>
+          <li class="header-item">
+            <p class="header-text">Обмежена пропозиція</p>
+          </li>
+        </ul>
 
-      <img class="header-img" src="./images/samsuka.jpg" />
+        <img class="header-img" src="./images/samsuka-main.jpg" />
+      </div>
     </header>
     <main>
       <div class="container">
-        <h2 class="top-title">Епічний розпродаж</h2>
+        <h2 class="top-title animate__animated animate__fadeInLeft">
+          Епічний розпродаж
+        </h2>
         <p class="top-text">
           Хто не любить передові технології, обгорнуті солодкою, непереможною
           вигідністю? Немає кращого відчуття, ніж схопити гарячий гаджет, на
-          який ви вже надивилися — особливо коли він коштує на 60% дешевше від
-          оригінальної ціни. Ми з радістю оголошуємо, що ми пропонуємо
-          неймовірну угоду на абсолютно новий Samsung S23. З наповненими
-          передовими функціями, ця угода така ж блискуча, як і самі телефони.
+          який ви вже надивилися —
+          <b class="b"
+            >особливо коли він коштує на <span class="span">60%</span> дешевше
+            від оригінальної ціни.</b
+          >
+          Ми з радістю оголошуємо, що ми пропонуємо неймовірну угоду на
+          абсолютно новий Samsung S23. З наповненими передовими функціями, ця
+          угода така ж блискуча, як і самі телефони.
         </p>
 
         <h2 class="top-title second">Присмак майбутнього</h2>
@@ -67,14 +85,30 @@
             <img class="top-img third" src="./images/samsuka2.jpg" />
           </li>
         </ul>
+        <div class="top-container">
+          <h2 class="top-title third">Пекельна вигода</h2>
+          <p class="top-text third">
+            У нас надто вигідні пропозиції, щоб пропустити їх. Тож не зволікайте
+            — приходьте та скористайтеся цим шансом стати першим власником
+            Samsung S23 за неймовірно доступною ціною. Ось заклик до всіх
+            любителів технологій — отримайте свій фантастичний гаджет одним
+            клацанням миші.
+          </p>
+          <p class="discount">Знижка 60%</p>
+        </div>
 
-        <h2 class="top-title third">Пекельна пропозиція</h2>
+        <h2 class="top-title third">Скільки діє пропозиція?</h2>
         <p class="top-text third">
-          У нас надто вигідні пропозиції, щоб пропустити їх. Тож не зволікайте —
-          приходьте та скористайтеся цим шансом стати першим власником Samsung
-          S23 за неймовірно доступною ціною. Ось заклик до всіх любителів
-          технологій — отримайте свій фантастичний гаджет одним клацанням миші.
+          Ця пропозиція залишається в силі — доки наші запаси не будуть
+          розкуплені як гарячі пиріжки! Тож не зволікайте, інакше ви можете
+          залишитися з порожніми руками.
         </p>
+
+        <button class="btn" type="button" data-modal-open>
+          Придбати зараз
+        </button>
+
+        <h3 class="bottom-title testik">Оплата за фактом отримання</h3>
 
         <h2 class="top-title fourth">Ви питаєте, ми відповідаємо</h2>
         <ul class="bottom-list list">
@@ -82,8 +116,8 @@
             <h3 class="bottom-title">Екран Super AMOLED:</h3>
             <p class="bottom-text">
               Понурюйтесь у найяскравіші кольори та неймовірну роздільну
-              здатність за допомогою великого дисплея Samsung S23. Кожен піксель
-              стає живим, кожен контур стає чітким, дозволяючи вам
+              здатність за допомогою великого дисплея Samsung S23. Усі пікселі
+              стають живими, кожен контур стає чітким, дозволяючи вам
               насолоджуватися кожною деталлю вашого вмісту.
             </p>
           </li>
@@ -104,46 +138,38 @@
             </p>
           </li>
           <li class="bottom-item">
+            <h3 class="bottom-title">Довга автономність:</h3>
+            <p class="bottom-text">
+              Більше часу для розваг, менше часу на підзарядку. Акумулятор
+              Samsung S23 забезпечить вам надійне живлення на цілий день.
+              Телефон має захист від пилу й води відповідно до стандарту IP68.
+            </p>
+          </li>
+          <li class="bottom-item">
             <h3 class="bottom-title">Максимальна пам'ять:</h3>
             <p class="bottom-text">
               Забудьте про проблеми з пам'яттю. Samsung S23 має достатньо місця
               для всіх ваших фотографій, відео, музики та додатків.
             </p>
           </li>
+
           <li class="bottom-item">
-            <h3 class="bottom-title">Довга автономність:</h3>
+            <h3 class="bottom-title test">Вроджена міцність<br /></h3>
             <p class="bottom-text">
-              Більше часу для розваг, менше часу на підзарядку. Акумулятор
-              Samsung S23 забезпечить вам надійне живлення на цілий день.
-            </p>
-          </li>
-          <li class="bottom-item">
-            <h3 class="bottom-title test">
-              Підтримка<br />
-              5G:
-            </h3>
-            <p class="bottom-text">
-              Сприймайте швидкість майбутнього вже сьогодні! Завдяки підтримці
-              5G, ви завжди будете підключені до швидкого та стабільного
-              інтернету.
+              Передня й задня панелі Galaxy S23 Ultra виготовлені з витривалого
+              скла Corning® Gorilla® Glass Victus® 2, а його рамка — з
+              найміцнішого матеріалу Armor Aluminum.
             </p>
           </li>
         </ul>
 
-        <h2 class="top-title third">Скільки діє пропозиція?</h2>
-        <p class="top-text third">
-          Ця пропозиція залишається в силі — доки наші запаси не будуть
-          розкуплені як гарячі пиріжки! Тож не зволікайте, інакше ви можете
-          залишитися з порожніми руками.
-        </p>
-
-        <button class="btn" type="button" data-modal-open>
-          Придбати зараз
-        </button>
-
         <div data-modal class="backdrop hidden">
           <div class="modal">
-            <a></a> <button data-modal-close>close</button>
+            <a></a>
+            <button class="close" data-modal-close>Х</button>
+            <h3 class="modal-text">
+              Залиште ваші данні, і ми вам зателефонуємо!
+            </h3>
           </div>
         </div>
       </div>

@@ -83,6 +83,13 @@ img {
 
 .header-text {
   font-size: 22px;
+  cursor: pointer;
+  transition: color 250ms linear;
+  color: black;
+}
+
+.header-text:hover {
+  color: white;
 }
 
 .header-img {
@@ -98,19 +105,37 @@ img {
   padding: 0 32px;
 }
 
+.top-container {
+  margin-bottom: 150px;
+  position: relative;
+}
+
 .top-title {
   font-family: "Space Mono", monospace;
   font-size: 69px;
   text-transform: uppercase;
   font-weight: 800;
+  width: fit-content;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .top-text {
   font-size: 20px;
   font-family: "Space Mono", monospace;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center;
   width: 850px;
-  margin-bottom: 150px;
+}
+
+.b {
+  font-size: 25px;
+  position: relative;
+}
+
+.span {
+  text-decoration: underline;
 }
 
 .top-title.second {
@@ -118,22 +143,41 @@ img {
   margin-bottom: 50px;
 }
 
-.top-img.first {
-  width: 100%;
+.b::after {
+}
+
+.discount {
+  font-family: "Russo One", sans-serif;
+  width: fit-content;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  bottom: -70px;
+  right: 190px;
+  transform: rotate(-10deg);
+  background-color: transparent;
+  padding: 7px;
   border-radius: 12px;
-  height: 800px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.top-img.first {
+  width: 600px;
+  border-radius: 12px;
+  height: 350px;
+  margin: 0 auto;
 }
 
 .top-img.second {
   transform: rotate(90deg);
-  width: 400px;
-  height: 600px;
+  width: 200px;
+  height: 350px;
   border-radius: 12px;
 }
 
 .top-img.third {
-  width: 600px;
-  height: 400px;
+  width: 350px;
+  height: 200px;
   border-radius: 12px;
 }
 
@@ -143,10 +187,15 @@ img {
 }
 
 .top-item {
-  width: calc(100% / 2);
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-item:not(:last-child) {
+  margin-right: 150px;
+  margin-left: 350px;
 }
 
 .top-title.third {
@@ -182,13 +231,24 @@ img {
 
 .bottom-item {
   width: calc(100% / 4);
-  border: 1px dashed black;
-  padding: 15px;
+
+  padding: 30px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  scale: 0.95;
+  transition: scale 150ms linear;
+  cursor: pointer;
 }
+
+.bottom-item:hover {
+  scale: 1;
+}
+
 .bottom-title {
   font-family: "Russo One", sans-serif;
   font-size: 30px;
@@ -202,6 +262,7 @@ img {
 .bottom-text {
   font-size: 18px;
   font-family: "Space Mono", monospace;
+  text-align: center;
 }
 
 .btn {
@@ -218,10 +279,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-bottom: 200px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 100px;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.bottom-title.testik {
+  margin: 0 auto;
+
+  margin-bottom: 150px;
+  width: 350px;
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -246,12 +320,37 @@ img {
 .modal {
   padding: 72px 24px 24px;
   position: absolute;
-  width: 700px;
-  height: 450px;
+  width: 70vw;
+  height: 70vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  height: auto;
-  background-color: black;
+
+  background-color: white;
+}
+
+.close {
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.modal-text {
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Russo One", sans-serif;
+  color: black;
 }
